@@ -39,12 +39,12 @@ Installs a rules file that teaches your AI to:
 ### After (with rules)
 
 ```
-+---------------------------+
-|  Project Status           |
-+---------------------------+
-|  73 files . 52k lines    |
-|  45 pages                 |
-+---------------------------+
++----------------------+
+| Project Status       |
++----------------------+
+| 73 files . 52k lines |
+| 45 pages             |
++----------------------+
 ```
 
 ## Usage
