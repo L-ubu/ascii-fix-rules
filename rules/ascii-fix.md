@@ -77,6 +77,12 @@ Pick ONE style and use it consistently for the entire block.
 
 **Default to unicode-light** (`┌─┐│└┘`) unless the user requests a specific style.
 
+## Markdown rendering warning
+
+Unicode box-drawing characters (`╔`, `═`, `║`, `┌`, `─`, `│`, `╭`, etc.) render at **inconsistent widths** in most markdown renderers (GitHub, GitLab, Bitbucket, etc.). This breaks alignment in code blocks.
+
+**Rule:** When generating ASCII art that will appear in a `.md` file or markdown context, **always use plain ASCII style** (`+`, `-`, `|`). Only use Unicode box-drawing characters in terminal output, source code comments, or plain text files where a monospace font is guaranteed.
+
 ## Self-check before outputting
 
 Before showing ANY ASCII art to the user, verify ALL of these:
@@ -88,6 +94,7 @@ Before showing ANY ASCII art to the user, verify ALL of these:
 - [ ] All cells have exactly 1 space padding on each side
 - [ ] Separator rows have crosses/tees at every column boundary
 - [ ] CJK/emoji cells have correct padding (fewer spaces because chars are wider)
+- [ ] If output is markdown: using plain ASCII style only (`+`, `-`, `|`)
 
 If any check fails, fix it before outputting.
 

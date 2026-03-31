@@ -19,7 +19,7 @@ That's it. Your AI assistant will now follow ASCII art best practices automatica
 Installs a rules file that teaches your AI to:
 
 - **Align columns correctly** — every row has delimiters at the same positions
-- **Use consistent style** — never mix `║` with `│` in the same block
+- **Use consistent style** — never mix border characters in the same block
 - **Pad cells properly** — 1 space on each side, always
 - **Match border widths** — borders span the full width of the widest content
 - **Handle CJK/emoji** — fullwidth characters count as 2 columns
@@ -28,23 +28,23 @@ Installs a rules file that teaches your AI to:
 ### Before (without rules)
 
 ```
-╔══════════════════════════╗
-║  Project Status           ║
-╠══════════════════════════╣
-║  73 files · 52k lines  ║
-║  45 pages              ║
-╚══════════════════════════╝
++----------------------------+
+|  Project Status             |
++----------------------------+
+|  73 files . 52k lines  |
+|  45 pages              |
++----------------------------+
 ```
 
 ### After (with rules)
 
 ```
-╔═════════════════════════╗
-║  Project Status         ║
-╠═════════════════════════╣
-║  73 files · 52k lines  ║
-║  45 pages               ║
-╚═════════════════════════╝
++---------------------------+
+|  Project Status           |
++---------------------------+
+|  73 files . 52k lines    |
+|  45 pages                 |
++---------------------------+
 ```
 
 ## Usage

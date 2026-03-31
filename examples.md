@@ -1,28 +1,28 @@
 # ASCII Art Examples
 
-A collection of tables and boxes in various styles and sizes.
+A collection of tables and boxes in various styles and sizes. All examples use plain ASCII characters (`+`, `-`, `|`) to ensure correct rendering in markdown.
 
 ## Small Tables
 
 ### Minimal 2x2
 
 ```
-┌───────┬───────┐
-│ Key   │ Value │
-├───────┼───────┤
-│ Alpha │ 100   │
-│ Beta  │ 200   │
-└───────┴───────┘
++-------+-------+
+| Key   | Value |
++-------+-------+
+| Alpha | 100   |
+| Beta  | 200   |
++-------+-------+
 ```
 
 ### Single Row
 
 ```
-┌────┬──────────┬────────┐
-│ ID │ Name     │ Active │
-├────┼──────────┼────────┤
-│ 1  │ Postgres │ Yes    │
-└────┴──────────┴────────┘
++----+----------+--------+
+| ID | Name     | Active |
++----+----------+--------+
+| 1  | Postgres | Yes    |
++----+----------+--------+
 ```
 
 ## Medium Tables
@@ -30,33 +30,33 @@ A collection of tables and boxes in various styles and sizes.
 ### Project Dependencies
 
 ```
-┌──────────────┬─────────┬─────────┬────────────────────┐
-│ Package      │ Version │ License │ Description        │
-├──────────────┼─────────┼─────────┼────────────────────┤
-│ express      │ 4.18.2  │ MIT     │ Web framework      │
-│ pg           │ 8.11.3  │ MIT     │ PostgreSQL client  │
-│ redis        │ 4.6.10  │ MIT     │ Redis client       │
-│ jsonwebtoken │ 9.0.2   │ MIT     │ JWT implementation │
-│ zod          │ 3.22.4  │ MIT     │ Schema validation  │
-└──────────────┴─────────┴─────────┴────────────────────┘
++--------------+---------+---------+--------------------+
+| Package      | Version | License | Description        |
++--------------+---------+---------+--------------------+
+| express      | 4.18.2  | MIT     | Web framework      |
+| pg           | 8.11.3  | MIT     | PostgreSQL client  |
+| redis        | 4.6.10  | MIT     | Redis client       |
+| jsonwebtoken | 9.0.2   | MIT     | JWT implementation |
+| zod          | 3.22.4  | MIT     | Schema validation  |
++--------------+---------+---------+--------------------+
 ```
 
 ### HTTP Status Codes
 
 ```
-╔══════╦═══════════════════════╦══════════╗
-║ Code ║ Message               ║ Category ║
-╠══════╬═══════════════════════╬══════════╣
-║ 200  ║ OK                    ║ Success  ║
-║ 201  ║ Created               ║ Success  ║
-║ 301  ║ Moved Permanently     ║ Redirect ║
-║ 400  ║ Bad Request           ║ Client   ║
-║ 401  ║ Unauthorized          ║ Client   ║
-║ 403  ║ Forbidden             ║ Client   ║
-║ 404  ║ Not Found             ║ Client   ║
-║ 500  ║ Internal Server Error ║ Server   ║
-║ 503  ║ Service Unavailable   ║ Server   ║
-╚══════╩═══════════════════════╩══════════╝
++------+-----------------------+----------+
+| Code | Message               | Category |
++------+-----------------------+----------+
+| 200  | OK                    | Success  |
+| 201  | Created               | Success  |
+| 301  | Moved Permanently     | Redirect |
+| 400  | Bad Request           | Client   |
+| 401  | Unauthorized          | Client   |
+| 403  | Forbidden             | Client   |
+| 404  | Not Found             | Client   |
+| 500  | Internal Server Error | Server   |
+| 503  | Service Unavailable   | Server   |
++------+-----------------------+----------+
 ```
 
 ## Wide Tables
@@ -64,19 +64,19 @@ A collection of tables and boxes in various styles and sizes.
 ### Team Roster
 
 ```
-╭───────────────┬──────────────────┬───────────┬───────────┬──────────────────────────────────────╮
-│ Name          │ Role             │ Team      │ Location  │ Focus Area                           │
-├───────────────┼──────────────────┼───────────┼───────────┼──────────────────────────────────────┤
-│ Alice Johnson │ Staff Engineer   │ Platform  │ Amsterdam │ API design and service architecture  │
-│ Bob Chen      │ Senior Designer  │ Product   │ London    │ Design systems and accessibility     │
-│ Carol Müller  │ Engineering Lead │ Platform  │ Berlin    │ Infrastructure and developer tooling │
-│ Dave Kim      │ Product Manager  │ Product   │ Seoul     │ Roadmap and stakeholder alignment    │
-│ Eve Santos    │ Junior Developer │ Platform  │ Lisbon    │ Frontend components and testing      │
-│ Frank Tanaka  │ Data Engineer    │ Analytics │ Tokyo     │ Pipeline reliability and monitoring  │
-╰───────────────┴──────────────────┴───────────┴───────────┴──────────────────────────────────────╯
++---------------+------------------+-----------+-----------+--------------------------------------+
+| Name          | Role             | Team      | Location  | Focus Area                           |
++---------------+------------------+-----------+-----------+--------------------------------------+
+| Alice Johnson | Staff Engineer   | Platform  | Amsterdam | API design and service architecture  |
+| Bob Chen      | Senior Designer  | Product   | London    | Design systems and accessibility     |
+| Carol Muller  | Engineering Lead | Platform  | Berlin    | Infrastructure and developer tooling |
+| Dave Kim      | Product Manager  | Product   | Seoul     | Roadmap and stakeholder alignment    |
+| Eve Santos    | Junior Developer | Platform  | Lisbon    | Frontend components and testing      |
+| Frank Tanaka  | Data Engineer    | Analytics | Tokyo     | Pipeline reliability and monitoring  |
++---------------+------------------+-----------+-----------+--------------------------------------+
 ```
 
-### ASCII Style — Feature Matrix
+### Feature Matrix
 
 ```
 +-------------------+-------+-------+-------+-------+--------+
@@ -97,53 +97,53 @@ A collection of tables and boxes in various styles and sizes.
 ### Simple Status Box
 
 ```
-╔══════════════════════╗
-║  Build Status: PASS  ║
-╚══════════════════════╝
++------------------------+
+|  Build Status: PASS    |
++------------------------+
 ```
 
 ### Info Box with Separator
 
 ```
-┌───────────────────────────┐
-│ ascii-fix-rules v1.0.0    │
-├───────────────────────────┤
-│ AI rules for correct      │
-│ ASCII art generation.     │
-│                           │
-│ Supports: Cursor, Claude  │
-└───────────────────────────┘
++-----------------------------+
+| ascii-fix-rules v1.0.0      |
++-----------------------------+
+| AI rules for correct        |
+| ASCII art generation.       |
+|                             |
+| Supports: Cursor, Claude    |
++-----------------------------+
 ```
 
 ### Dashboard Box
 
 ```
-╔════════════════════════════════╗
-║ DEPLOYMENT SUMMARY             ║
-╠════════════════════════════════╣
-║ Environment: production        ║
-║ Version:     3.14.1            ║
-║ Commit:      a1b2c3d           ║
-║ Timestamp:   2026-03-31 11:45  ║
-╠════════════════════════════════╣
-║ Services:    12 healthy        ║
-║ Uptime:      99.97%            ║
-║ Avg latency: 42ms              ║
-╚════════════════════════════════╝
++--------------------------------+
+| DEPLOYMENT SUMMARY             |
++--------------------------------+
+| Environment: production        |
+| Version:     3.14.1            |
+| Commit:      a1b2c3d           |
+| Timestamp:   2026-03-31 11:45  |
++--------------------------------+
+| Services:    12 healthy        |
+| Uptime:      99.97%            |
+| Avg latency: 42ms              |
++--------------------------------+
 ```
 
-### Rounded Warning Box
+### Warning Box
 
 ```
-╭──────────────────────────────────────╮
-│ WARNING                              │
-├──────────────────────────────────────┤
-│ This action cannot be undone.        │
-│ All data in the staging environment  │
-│ will be permanently deleted.         │
-│                                      │
-│ Proceed with caution.                │
-╰──────────────────────────────────────╯
++--------------------------------------+
+| WARNING                              |
++--------------------------------------+
+| This action cannot be undone.        |
+| All data in the staging environment  |
+| will be permanently deleted.         |
+|                                      |
+| Proceed with caution.                |
++--------------------------------------+
 ```
 
 ## Tiny Tables
@@ -151,21 +151,21 @@ A collection of tables and boxes in various styles and sizes.
 ### Boolean
 
 ```
-┌───────┬───┐
-│ Flag  │ ? │
-├───────┼───┤
-│ Debug │ Y │
-│ Trace │ N │
-└───────┴───┘
++-------+---+
+| Flag  | ? |
++-------+---+
+| Debug | Y |
+| Trace | N |
++-------+---+
 ```
 
 ### Key-Value
 
 ```
-┌──────────┬────────────────┐
-│ Host     │ 127.0.0.1      │
-│ Port     │ 5432           │
-│ Database │ app_production │
-│ SSL      │ required       │
-└──────────┴────────────────┘
++----------+----------------+
+| Host     | 127.0.0.1      |
+| Port     | 5432           |
+| Database | app_production |
+| SSL      | required       |
++----------+----------------+
 ```
