@@ -1,0 +1,33 @@
+{
+  "name": "ascii-fix-rules",
+  "version": "1.0.0",
+  "description": "AI rules for generating correct ASCII art tables, boxes, and diagrams. Install with npx.",
+  "bin": {
+    "ascii-fix-rules": "bin/cli.js"
+  },
+  "type": "module",
+  "files": [
+    "bin/",
+    "rules/"
+  ],
+  "keywords": [
+    "ascii",
+    "ascii-art",
+    "table",
+    "box-drawing",
+    "cursor",
+    "claude",
+    "ai",
+    "rules",
+    "skill"
+  ],
+  "author": "Lubu",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/L-ubu/ascii-fix-rules"
+  },
+  "engines": {
+    "node": ">=18.3.0"
+  }
+}
